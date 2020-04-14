@@ -3,44 +3,186 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5C23D6499A3525ED5836EDD /* Pods_ToolbarRadio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F53544E59C6504F18539180 /* Pods_ToolbarRadio.framework */; };
+		B370F784243FD9E200C52EC4 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F783243FD9E200C52EC4 /* EventMonitor.swift */; };
+		B370F787243FD9EA00C52EC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F785243FD9EA00C52EC4 /* ContentView.swift */; };
+		B370F788243FD9EA00C52EC4 /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F786243FD9EA00C52EC4 /* StatusBarItem.swift */; };
+		B370F78C243FE16900C52EC4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F78B243FE16900C52EC4 /* Player.swift */; };
+		B370F790243FE3C500C52EC4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F78F243FE3C500C52EC4 /* Settings.swift */; };
+		B370F79324411F6100C52EC4 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F79224411F6100C52EC4 /* Station.swift */; };
+		B370F7952441C17400C52EC4 /* NowPlayingFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F7942441C17400C52EC4 /* NowPlayingFetcher.swift */; };
+		B370F79D2441DE6900C52EC4 /* Date+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F79C2441DE6900C52EC4 /* Date+Extra.swift */; };
+		B381A3BD2442351900A05B2A /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3BC2442351900A05B2A /* Mediator.swift */; };
+		B381A3BF244239EA00A05B2A /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3BE244239EA00A05B2A /* NotificationCenter.swift */; };
+		B381A3C3244248FF00A05B2A /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3C2244248FF00A05B2A /* NowPlaying.swift */; };
+		B381A3CB2442F7D300A05B2A /* ToolbarRadioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3CA2442F7D300A05B2A /* ToolbarRadioTests.swift */; };
+		B381A3D32443014300A05B2A /* ImagesDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3D22443014300A05B2A /* ImagesDownloader.swift */; };
 		B3937D11243E710C00B4BB88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3937D10243E710C00B4BB88 /* AppDelegate.swift */; };
-		B3937D13243E710C00B4BB88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3937D12243E710C00B4BB88 /* ContentView.swift */; };
 		B3937D15243E711100B4BB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3937D14243E711100B4BB88 /* Assets.xcassets */; };
 		B3937D18243E711100B4BB88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3937D17243E711100B4BB88 /* Preview Assets.xcassets */; };
 		B3937D1B243E711100B4BB88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3937D19243E711100B4BB88 /* Main.storyboard */; };
+		BA19E137E1F4574CA1B5B688 /* libPods-ToolbarRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC5E69F4B397AEF455992C1 /* libPods-ToolbarRadioTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B381A3CD2442F7D300A05B2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3937D05243E710C00B4BB88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3937D0C243E710C00B4BB88;
+			remoteInfo = ToolbarRadio;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		48DC608CE418ED34D4FF4230 /* Pods-ToolbarRadioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadioTests.release.xcconfig"; path = "Target Support Files/Pods-ToolbarRadioTests/Pods-ToolbarRadioTests.release.xcconfig"; sourceTree = "<group>"; };
+		4CB9A4248A132A3F6E1F4EC1 /* Pods-ToolbarRadio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadio.debug.xcconfig"; path = "Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio.debug.xcconfig"; sourceTree = "<group>"; };
+		5F53544E59C6504F18539180 /* Pods_ToolbarRadio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolbarRadio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B370F783243FD9E200C52EC4 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		B370F785243FD9EA00C52EC4 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B370F786243FD9EA00C52EC4 /* StatusBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
+		B370F78B243FE16900C52EC4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B370F78F243FE3C500C52EC4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B370F79224411F6100C52EC4 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		B370F7942441C17400C52EC4 /* NowPlayingFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingFetcher.swift; sourceTree = "<group>"; };
+		B370F79C2441DE6900C52EC4 /* Date+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extra.swift"; sourceTree = "<group>"; };
+		B381A3BC2442351900A05B2A /* Mediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
+		B381A3BE244239EA00A05B2A /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		B381A3C2244248FF00A05B2A /* NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlaying.swift; sourceTree = "<group>"; };
+		B381A3C82442F7D300A05B2A /* ToolbarRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolbarRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B381A3CA2442F7D300A05B2A /* ToolbarRadioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarRadioTests.swift; sourceTree = "<group>"; };
+		B381A3CC2442F7D300A05B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B381A3D22443014300A05B2A /* ImagesDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDownloader.swift; sourceTree = "<group>"; };
 		B3937D0D243E710C00B4BB88 /* ToolbarRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolbarRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3937D10243E710C00B4BB88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3937D12243E710C00B4BB88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3937D14243E711100B4BB88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3937D17243E711100B4BB88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3937D1A243E711100B4BB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3937D1C243E711100B4BB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3937D1D243E711100B4BB88 /* ToolbarRadio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolbarRadio.entitlements; sourceTree = "<group>"; };
+		F1DD87431DB2B6F870E19512 /* Pods-ToolbarRadio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadio.release.xcconfig"; path = "Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio.release.xcconfig"; sourceTree = "<group>"; };
+		F9F1485FB39C7D589F8A73A0 /* Pods-ToolbarRadioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadioTests.debug.xcconfig"; path = "Target Support Files/Pods-ToolbarRadioTests/Pods-ToolbarRadioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFC5E69F4B397AEF455992C1 /* libPods-ToolbarRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToolbarRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B381A3C52442F7D300A05B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA19E137E1F4574CA1B5B688 /* libPods-ToolbarRadioTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3937D0A243E710C00B4BB88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C23D6499A3525ED5836EDD /* Pods_ToolbarRadio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3849877D8D8A22A2AD2F112C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F53544E59C6504F18539180 /* Pods_ToolbarRadio.framework */,
+				FFC5E69F4B397AEF455992C1 /* libPods-ToolbarRadioTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49B1E5343813AD478D09DB68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CB9A4248A132A3F6E1F4EC1 /* Pods-ToolbarRadio.debug.xcconfig */,
+				F1DD87431DB2B6F870E19512 /* Pods-ToolbarRadio.release.xcconfig */,
+				F9F1485FB39C7D589F8A73A0 /* Pods-ToolbarRadioTests.debug.xcconfig */,
+				48DC608CE418ED34D4FF4230 /* Pods-ToolbarRadioTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B370F780243FD7CC00C52EC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3937D14243E711100B4BB88 /* Assets.xcassets */,
+				B3937D19243E711100B4BB88 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B370F781243FD80A00C52EC4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B370F783243FD9E200C52EC4 /* EventMonitor.swift */,
+				B381A3D22443014300A05B2A /* ImagesDownloader.swift */,
+				B381A3BC2442351900A05B2A /* Mediator.swift */,
+				B381A3BE244239EA00A05B2A /* NotificationCenter.swift */,
+				B370F7942441C17400C52EC4 /* NowPlayingFetcher.swift */,
+				B370F78B243FE16900C52EC4 /* Player.swift */,
+				B370F78F243FE3C500C52EC4 /* Settings.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B370F782243FD81E00C52EC4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B370F785243FD9EA00C52EC4 /* ContentView.swift */,
+				B370F786243FD9EA00C52EC4 /* StatusBarItem.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B370F79124411F4700C52EC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B370F79224411F6100C52EC4 /* Station.swift */,
+				B381A3C2244248FF00A05B2A /* NowPlaying.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B370F79A2441DE5200C52EC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B370F79B2441DE5900C52EC4 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B370F79B2441DE5900C52EC4 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B370F79C2441DE6900C52EC4 /* Date+Extra.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B381A3C92442F7D300A05B2A /* ToolbarRadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				B381A3CA2442F7D300A05B2A /* ToolbarRadioTests.swift */,
+				B381A3CC2442F7D300A05B2A /* Info.plist */,
+			);
+			path = ToolbarRadioTests;
+			sourceTree = "<group>";
+		};
 		B3937D04243E710C00B4BB88 = {
 			isa = PBXGroup;
 			children = (
 				B3937D0F243E710C00B4BB88 /* ToolbarRadio */,
+				B381A3C92442F7D300A05B2A /* ToolbarRadioTests */,
 				B3937D0E243E710C00B4BB88 /* Products */,
+				49B1E5343813AD478D09DB68 /* Pods */,
+				3849877D8D8A22A2AD2F112C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				B3937D0D243E710C00B4BB88 /* ToolbarRadio.app */,
+				B381A3C82442F7D300A05B2A /* ToolbarRadioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,12 +198,14 @@
 		B3937D0F243E710C00B4BB88 /* ToolbarRadio */ = {
 			isa = PBXGroup;
 			children = (
+				B370F79A2441DE5200C52EC4 /* Extensions */,
+				B370F781243FD80A00C52EC4 /* Core */,
+				B370F79124411F4700C52EC4 /* Model */,
+				B370F782243FD81E00C52EC4 /* UI */,
+				B370F780243FD7CC00C52EC4 /* Resources */,
 				B3937D10243E710C00B4BB88 /* AppDelegate.swift */,
-				B3937D12243E710C00B4BB88 /* ContentView.swift */,
-				B3937D14243E711100B4BB88 /* Assets.xcassets */,
-				B3937D19243E711100B4BB88 /* Main.storyboard */,
-				B3937D1C243E711100B4BB88 /* Info.plist */,
 				B3937D1D243E711100B4BB88 /* ToolbarRadio.entitlements */,
+				B3937D1C243E711100B4BB88 /* Info.plist */,
 				B3937D16243E711100B4BB88 /* Preview Content */,
 			);
 			path = ToolbarRadio;
@@ -77,13 +222,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B381A3C72442F7D300A05B2A /* ToolbarRadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B381A3CF2442F7D300A05B2A /* Build configuration list for PBXNativeTarget "ToolbarRadioTests" */;
+			buildPhases = (
+				AB78A87969082C10BC04479B /* [CP] Check Pods Manifest.lock */,
+				B381A3C42442F7D300A05B2A /* Sources */,
+				B381A3C52442F7D300A05B2A /* Frameworks */,
+				B381A3C62442F7D300A05B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B381A3CE2442F7D300A05B2A /* PBXTargetDependency */,
+			);
+			name = ToolbarRadioTests;
+			productName = ToolbarRadioTests;
+			productReference = B381A3C82442F7D300A05B2A /* ToolbarRadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B3937D0C243E710C00B4BB88 /* ToolbarRadio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3937D20243E711100B4BB88 /* Build configuration list for PBXNativeTarget "ToolbarRadio" */;
 			buildPhases = (
+				98A60D8E76FEFBB8E472360E /* [CP] Check Pods Manifest.lock */,
 				B3937D09243E710C00B4BB88 /* Sources */,
 				B3937D0A243E710C00B4BB88 /* Frameworks */,
 				B3937D0B243E710C00B4BB88 /* Resources */,
+				BC5825369171E916A41A280D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -104,6 +270,10 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = brownie;
 				TargetAttributes = {
+					B381A3C72442F7D300A05B2A = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = B3937D0C243E710C00B4BB88;
+					};
 					B3937D0C243E710C00B4BB88 = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -123,11 +293,19 @@
 			projectRoot = "";
 			targets = (
 				B3937D0C243E710C00B4BB88 /* ToolbarRadio */,
+				B381A3C72442F7D300A05B2A /* ToolbarRadioTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B381A3C62442F7D300A05B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3937D0B243E710C00B4BB88 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,17 +318,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		98A60D8E76FEFBB8E472360E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToolbarRadio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB78A87969082C10BC04479B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToolbarRadioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5825369171E916A41A280D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B381A3C42442F7D300A05B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B381A3CB2442F7D300A05B2A /* ToolbarRadioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3937D09243E710C00B4BB88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3937D13243E710C00B4BB88 /* ContentView.swift in Sources */,
+				B370F7952441C17400C52EC4 /* NowPlayingFetcher.swift in Sources */,
 				B3937D11243E710C00B4BB88 /* AppDelegate.swift in Sources */,
+				B381A3BF244239EA00A05B2A /* NotificationCenter.swift in Sources */,
+				B370F79324411F6100C52EC4 /* Station.swift in Sources */,
+				B370F784243FD9E200C52EC4 /* EventMonitor.swift in Sources */,
+				B381A3BD2442351900A05B2A /* Mediator.swift in Sources */,
+				B370F788243FD9EA00C52EC4 /* StatusBarItem.swift in Sources */,
+				B381A3C3244248FF00A05B2A /* NowPlaying.swift in Sources */,
+				B370F790243FE3C500C52EC4 /* Settings.swift in Sources */,
+				B381A3D32443014300A05B2A /* ImagesDownloader.swift in Sources */,
+				B370F78C243FE16900C52EC4 /* Player.swift in Sources */,
+				B370F79D2441DE6900C52EC4 /* Date+Extra.swift in Sources */,
+				B370F787243FD9EA00C52EC4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B381A3CE2442F7D300A05B2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3937D0C243E710C00B4BB88 /* ToolbarRadio */;
+			targetProxy = B381A3CD2442F7D300A05B2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B3937D19243E711100B4BB88 /* Main.storyboard */ = {
@@ -164,6 +433,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B381A3D02442F7D300A05B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F1485FB39C7D589F8A73A0 /* Pods-ToolbarRadioTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ToolbarRadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brown.ie.ToolbarRadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToolbarRadio.app/Contents/MacOS/ToolbarRadio";
+			};
+			name = Debug;
+		};
+		B381A3D12442F7D300A05B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48DC608CE418ED34D4FF4230 /* Pods-ToolbarRadioTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ToolbarRadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brown.ie.ToolbarRadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToolbarRadio.app/Contents/MacOS/ToolbarRadio";
+			};
+			name = Release;
+		};
 		B3937D1E243E711100B4BB88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -279,6 +588,7 @@
 		};
 		B3937D21243E711100B4BB88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB9A4248A132A3F6E1F4EC1 /* Pods-ToolbarRadio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToolbarRadio/ToolbarRadio.entitlements;
@@ -292,6 +602,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = brown.ie.ToolbarRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -300,6 +611,7 @@
 		};
 		B3937D22243E711100B4BB88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DD87431DB2B6F870E19512 /* Pods-ToolbarRadio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToolbarRadio/ToolbarRadio.entitlements;
@@ -313,6 +625,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = brown.ie.ToolbarRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -322,6 +635,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B381A3CF2442F7D300A05B2A /* Build configuration list for PBXNativeTarget "ToolbarRadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B381A3D02442F7D300A05B2A /* Debug */,
+				B381A3D12442F7D300A05B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3937D08243E710C00B4BB88 /* Build configuration list for PBXProject "ToolbarRadio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
