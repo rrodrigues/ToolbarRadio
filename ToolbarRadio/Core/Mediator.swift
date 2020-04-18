@@ -46,10 +46,12 @@ class Mediator {
         currentStation
             .compactMap({ $0 })
             .removeDuplicates()
+            .filter({ [weak self] _ in
+                guard let self = self else { return false }
+                return self.player.state == .playing || self.player.state == .loading
+            })
             .sink(receiveValue: { [weak self] station in
                 guard let self = self else { return }
-                guard self.player.state == .playing else { return }
-                self.player.stop()
                 self.player.play(url: station.streamURL)
             })
             .store(in: &storage)

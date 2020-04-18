@@ -43,6 +43,9 @@ class Player : NSObject {
     func play(url: URL) {
         state = .loading
         
+        player.pause()
+        removeCurrentItem()
+        
         let asset = AVAsset(url: url)
         let item = AVPlayerItem(asset: asset, automaticallyLoadedAssetKeys: requiredAssetKeys)
         item.add(metadataCollector)
@@ -63,11 +66,15 @@ class Player : NSObject {
     
     func stop() {
         player.pause()
+        removeCurrentItem()
+        state = .stop
+    }
+    
+    private func removeCurrentItem() {
         if let item = player.currentItem, item.mediaDataCollectors.contains(metadataCollector) {
             item.remove(metadataCollector)
         }
         player.replaceCurrentItem(with: nil)
-        state = .stop
     }
 }
 
