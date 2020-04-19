@@ -17,7 +17,7 @@
 		B370F7952441C17400C52EC4 /* NowPlayingFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F7942441C17400C52EC4 /* NowPlayingFetcher.swift */; };
 		B370F79D2441DE6900C52EC4 /* Date+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F79C2441DE6900C52EC4 /* Date+Extra.swift */; };
 		B381A3BD2442351900A05B2A /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3BC2442351900A05B2A /* Mediator.swift */; };
-		B381A3BF244239EA00A05B2A /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3BE244239EA00A05B2A /* NotificationCenter.swift */; };
+		B381A3BF244239EA00A05B2A /* LocalNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3BE244239EA00A05B2A /* LocalNotificationCenter.swift */; };
 		B381A3C3244248FF00A05B2A /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3C2244248FF00A05B2A /* NowPlaying.swift */; };
 		B381A3CB2442F7D300A05B2A /* ToolbarRadioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3CA2442F7D300A05B2A /* ToolbarRadioTests.swift */; };
 		B381A3D32443014300A05B2A /* ImagesDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381A3D22443014300A05B2A /* ImagesDownloader.swift */; };
@@ -51,7 +51,7 @@
 		B370F7942441C17400C52EC4 /* NowPlayingFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingFetcher.swift; sourceTree = "<group>"; };
 		B370F79C2441DE6900C52EC4 /* Date+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extra.swift"; sourceTree = "<group>"; };
 		B381A3BC2442351900A05B2A /* Mediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
-		B381A3BE244239EA00A05B2A /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		B381A3BE244239EA00A05B2A /* LocalNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationCenter.swift; sourceTree = "<group>"; };
 		B381A3C2244248FF00A05B2A /* NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlaying.swift; sourceTree = "<group>"; };
 		B381A3C82442F7D300A05B2A /* ToolbarRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolbarRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B381A3CA2442F7D300A05B2A /* ToolbarRadioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarRadioTests.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				B370F783243FD9E200C52EC4 /* EventMonitor.swift */,
 				B381A3D22443014300A05B2A /* ImagesDownloader.swift */,
 				B381A3BC2442351900A05B2A /* Mediator.swift */,
-				B381A3BE244239EA00A05B2A /* NotificationCenter.swift */,
+				B381A3BE244239EA00A05B2A /* LocalNotificationCenter.swift */,
 				B370F7942441C17400C52EC4 /* NowPlayingFetcher.swift */,
 				B370F78B243FE16900C52EC4 /* Player.swift */,
 				B370F78F243FE3C500C52EC4 /* Settings.swift */,
@@ -397,7 +397,7 @@
 			files = (
 				B370F7952441C17400C52EC4 /* NowPlayingFetcher.swift in Sources */,
 				B3937D11243E710C00B4BB88 /* AppDelegate.swift in Sources */,
-				B381A3BF244239EA00A05B2A /* NotificationCenter.swift in Sources */,
+				B381A3BF244239EA00A05B2A /* LocalNotificationCenter.swift in Sources */,
 				B370F79324411F6100C52EC4 /* Station.swift in Sources */,
 				B370F784243FD9E200C52EC4 /* EventMonitor.swift in Sources */,
 				B381A3BD2442351900A05B2A /* Mediator.swift in Sources */,

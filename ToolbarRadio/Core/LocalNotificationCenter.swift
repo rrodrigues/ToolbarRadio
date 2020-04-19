@@ -1,5 +1,5 @@
 //
-//  NotificationCenter.swift
+//  LocalNotificationCenter.swift
 //  ToolbarRadio
 //
 //  Created by Rui Rodrigues on 11/04/2020.
@@ -10,9 +10,9 @@ import Foundation
 import UserNotifications
 
 
-class NotificationCenter {
+class LocalNotificationCenter {
     
-    static let shared = NotificationCenter()
+    static let shared = LocalNotificationCenter()
     
     private let center = UNUserNotificationCenter.current()
     private let notificationsIds = [

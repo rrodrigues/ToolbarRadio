@@ -11,6 +11,7 @@ import AppKit
 
 protocol StatusBarItemDelegate : class {
     func togglePlayback()
+    func toggleUsePlaybackKeys()
 }
 
 class StatusBarItem {
@@ -27,6 +28,8 @@ class StatusBarItem {
     let button: NSStatusBarButton
     let menu: NSMenu
     let stationsMenu: NSMenu
+    
+    let playbackKeysMenuItem: NSMenuItem
     let quitMenuItem: NSMenuItem
     
     weak var delegate: StatusBarItemDelegate?
@@ -39,6 +42,7 @@ class StatusBarItem {
         button = item.button!
         menu = NSMenu(title: "Menu")
         stationsMenu = NSMenu(title: "Stations")
+        playbackKeysMenuItem = NSMenuItem(title: "Use playback keys", action: nil, keyEquivalent: "")
         quitMenuItem = NSMenuItem(title: "Quit", action: nil, keyEquivalent: "")
         
         item.isVisible = true
@@ -50,6 +54,10 @@ class StatusBarItem {
         button.action = #selector(itemClicked(_:))
         button.target = self
         
+        playbackKeysMenuItem.action = #selector(toggleUsePlaybackKeys)
+        playbackKeysMenuItem.target = self
+        playbackKeysMenuItem.state = settings.handlePlaybackKeysEvents ? .on : .off
+        
         let stationsMenuItem = menu.addItem(withTitle: stationsMenu.title, action: nil, keyEquivalent: "")
         stationsMenuItem.submenu = stationsMenu
         for station in settings.stationsList {
@@ -58,6 +66,7 @@ class StatusBarItem {
             m.representedObject = station
         }
         updateSelectedStation(settings.currentStation)
+        menu.addItem(playbackKeysMenuItem)
         menu.addItem(quitMenuItem)
     }
     
@@ -96,6 +105,12 @@ class StatusBarItem {
         } else {
             delegate?.togglePlayback()
         }
+    }
+    
+    @objc func toggleUsePlaybackKeys(_ sender: Any?) {
+        guard let item = sender as? NSMenuItem else { return }
+        delegate?.toggleUsePlaybackKeys()
+        item.state = settings.handlePlaybackKeysEvents ? .on : .off
     }
     
     @objc func stationSelected(_ sender: Any?) {

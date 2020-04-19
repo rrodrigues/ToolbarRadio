@@ -13,6 +13,7 @@ class Settings {
     struct Keys {
         static let selectedStation: String = "selected_station"
         static let stationsList: String = "stations_list"
+        static let handlePlaybackKeysEvents: String = "handle_playback_keys_wvents"
     }
     
     static let shared = Settings()
@@ -36,10 +37,16 @@ class Settings {
         ),
     ]
     
+    var handlePlaybackKeysEvents: Bool {
+        get { userDefaults.bool(forKey: Keys.handlePlaybackKeysEvents) }
+        set { userDefaults.set(newValue, forKey: Keys.handlePlaybackKeysEvents) }
+    }
+    
     init() {
         let selected = "radarfm"
         userDefaults.register(defaults: [
             Keys.selectedStation : selected,
+            Keys.handlePlaybackKeysEvents : true
         ])
         
         let id = userDefaults.string(forKey: Keys.selectedStation) ?? selected

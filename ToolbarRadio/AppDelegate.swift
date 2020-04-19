@@ -16,22 +16,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   
     var statusBarItem: StatusBarItem!
     var mediator: Mediator!
+    var playbackKeysMonitor: PlaybackKeysEventMonitor!
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let settings = Settings.shared
         
         statusBarItem = StatusBarItem(settings: .shared)
         statusBarItem.quitMenuItem.target = NSApp
         statusBarItem.quitMenuItem.action = #selector(NSApp.terminate(_:))
         
-        let notificationCenter = NotificationCenter.shared
-        notificationCenter.requestPermission()
+        let localNotificationCenter = LocalNotificationCenter.shared
+        localNotificationCenter.requestPermission()
+        
+        playbackKeysMonitor = PlaybackKeysEventMonitor(settings: settings)
+        playbackKeysMonitor.start()
         
         mediator = Mediator(statusBarItem,
                             Player.shared,
                             NowPlayingFetcher.shared,
-                            notificationCenter,
+                            playbackKeysMonitor,
+                            localNotificationCenter,
                             ImagesDownloader.shared,
-                            Settings.shared)
+                            settings)
+        mediator.start()
 
         
 //        // Create the SwiftUI view that provides the window contents.

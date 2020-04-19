@@ -15,23 +15,29 @@ class Mediator {
     let statusBarItem: StatusBarItem
     let player: Player
     let nowPlayingFetcher: NowPlayingFetcher
-    let notificationCenter: NotificationCenter
+    let playbackKeysEventMonitor: PlaybackKeysEventMonitor
+    let localNotificationCenter: LocalNotificationCenter
     let imagesDownloader: ImagesDownloader
     let settings: Settings
     
     init(_ statusBarItem: StatusBarItem,
          _ player: Player,
          _ nowPlayingFetcher: NowPlayingFetcher,
-         _ notificationCenter: NotificationCenter,
+         _ playbackKeysEventMonitor: PlaybackKeysEventMonitor,
+         _ localNotificationCenter: LocalNotificationCenter,
          _ imagesDownloader: ImagesDownloader,
          _ settings: Settings) {
         
         self.statusBarItem = statusBarItem
         self.player = player
         self.nowPlayingFetcher = nowPlayingFetcher
-        self.notificationCenter = notificationCenter
+        self.playbackKeysEventMonitor = playbackKeysEventMonitor
+        self.localNotificationCenter = localNotificationCenter
         self.imagesDownloader = imagesDownloader
         self.settings = settings
+    }
+    
+    func start() {
         
         statusBarItem.delegate = self
 
@@ -81,7 +87,7 @@ class Mediator {
             .connect()
             .store(in: &storage)
         
-        self.nowPlayingFetcher.$info
+        nowPlayingFetcher.$info
             .removeDuplicates()
             .compactMap({ $0 })
             .flatMap({ [weak self] info -> AnyPublisher<(NowPlaying, URL?), Never> in
@@ -104,7 +110,12 @@ class Mediator {
                 }
                 print("... \(info.station) -> \(playing)")
                 self?.statusBarItem.button.toolTip = "\(info.station) | \(playing)"
-                self?.notificationCenter.send(info.station, playing, image)
+                self?.localNotificationCenter.send(info.station, playing, image)
+            }).store(in: &storage)
+        
+        playbackKeysEventMonitor.pressedKey
+            .sink(receiveValue: { [weak self] key in
+                self?.togglePlayback()
             }).store(in: &storage)
     }
     
@@ -125,5 +136,7 @@ extension Mediator : StatusBarItemDelegate {
         }
     }
     
-    
+    func toggleUsePlaybackKeys() {
+        settings.handlePlaybackKeysEvents = !settings.handlePlaybackKeysEvents
+    }
 }
