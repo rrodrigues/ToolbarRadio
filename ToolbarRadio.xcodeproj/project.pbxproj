@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5C23D6499A3525ED5836EDD /* Pods_ToolbarRadio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F53544E59C6504F18539180 /* Pods_ToolbarRadio.framework */; };
 		B370F784243FD9E200C52EC4 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F783243FD9E200C52EC4 /* EventMonitor.swift */; };
 		B370F787243FD9EA00C52EC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F785243FD9EA00C52EC4 /* ContentView.swift */; };
 		B370F788243FD9EA00C52EC4 /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370F786243FD9EA00C52EC4 /* StatusBarItem.swift */; };
@@ -25,7 +24,7 @@
 		B3937D15243E711100B4BB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3937D14243E711100B4BB88 /* Assets.xcassets */; };
 		B3937D18243E711100B4BB88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3937D17243E711100B4BB88 /* Preview Assets.xcassets */; };
 		B3937D1B243E711100B4BB88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3937D19243E711100B4BB88 /* Main.storyboard */; };
-		BA19E137E1F4574CA1B5B688 /* libPods-ToolbarRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC5E69F4B397AEF455992C1 /* libPods-ToolbarRadioTests.a */; };
+		B3A30FA425BD64EB00F1B64D /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3A30FA325BD64EB00F1B64D /* SwifterSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		48DC608CE418ED34D4FF4230 /* Pods-ToolbarRadioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadioTests.release.xcconfig"; path = "Target Support Files/Pods-ToolbarRadioTests/Pods-ToolbarRadioTests.release.xcconfig"; sourceTree = "<group>"; };
-		4CB9A4248A132A3F6E1F4EC1 /* Pods-ToolbarRadio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadio.debug.xcconfig"; path = "Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio.debug.xcconfig"; sourceTree = "<group>"; };
-		5F53544E59C6504F18539180 /* Pods_ToolbarRadio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolbarRadio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B370F783243FD9E200C52EC4 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		B370F785243FD9EA00C52EC4 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B370F786243FD9EA00C52EC4 /* StatusBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
@@ -64,9 +60,6 @@
 		B3937D1A243E711100B4BB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3937D1C243E711100B4BB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3937D1D243E711100B4BB88 /* ToolbarRadio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolbarRadio.entitlements; sourceTree = "<group>"; };
-		F1DD87431DB2B6F870E19512 /* Pods-ToolbarRadio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadio.release.xcconfig"; path = "Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio.release.xcconfig"; sourceTree = "<group>"; };
-		F9F1485FB39C7D589F8A73A0 /* Pods-ToolbarRadioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolbarRadioTests.debug.xcconfig"; path = "Target Support Files/Pods-ToolbarRadioTests/Pods-ToolbarRadioTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FFC5E69F4B397AEF455992C1 /* libPods-ToolbarRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToolbarRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA19E137E1F4574CA1B5B688 /* libPods-ToolbarRadioTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,33 +74,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C23D6499A3525ED5836EDD /* Pods_ToolbarRadio.framework in Frameworks */,
+				B3A30FA425BD64EB00F1B64D /* SwifterSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3849877D8D8A22A2AD2F112C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5F53544E59C6504F18539180 /* Pods_ToolbarRadio.framework */,
-				FFC5E69F4B397AEF455992C1 /* libPods-ToolbarRadioTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		49B1E5343813AD478D09DB68 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4CB9A4248A132A3F6E1F4EC1 /* Pods-ToolbarRadio.debug.xcconfig */,
-				F1DD87431DB2B6F870E19512 /* Pods-ToolbarRadio.release.xcconfig */,
-				F9F1485FB39C7D589F8A73A0 /* Pods-ToolbarRadioTests.debug.xcconfig */,
-				48DC608CE418ED34D4FF4230 /* Pods-ToolbarRadioTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B370F780243FD7CC00C52EC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +153,6 @@
 				B3937D0F243E710C00B4BB88 /* ToolbarRadio */,
 				B381A3C92442F7D300A05B2A /* ToolbarRadioTests */,
 				B3937D0E243E710C00B4BB88 /* Products */,
-				49B1E5343813AD478D09DB68 /* Pods */,
-				3849877D8D8A22A2AD2F112C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,7 +196,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B381A3CF2442F7D300A05B2A /* Build configuration list for PBXNativeTarget "ToolbarRadioTests" */;
 			buildPhases = (
-				AB78A87969082C10BC04479B /* [CP] Check Pods Manifest.lock */,
 				B381A3C42442F7D300A05B2A /* Sources */,
 				B381A3C52442F7D300A05B2A /* Frameworks */,
 				B381A3C62442F7D300A05B2A /* Resources */,
@@ -245,17 +214,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3937D20243E711100B4BB88 /* Build configuration list for PBXNativeTarget "ToolbarRadio" */;
 			buildPhases = (
-				98A60D8E76FEFBB8E472360E /* [CP] Check Pods Manifest.lock */,
 				B3937D09243E710C00B4BB88 /* Sources */,
 				B3937D0A243E710C00B4BB88 /* Frameworks */,
 				B3937D0B243E710C00B4BB88 /* Resources */,
-				BC5825369171E916A41A280D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ToolbarRadio;
+			packageProductDependencies = (
+				B3A30FA325BD64EB00F1B64D /* SwifterSwift */,
+			);
 			productName = ToolbarRadio;
 			productReference = B3937D0D243E710C00B4BB88 /* ToolbarRadio.app */;
 			productType = "com.apple.product-type.application";
@@ -288,6 +258,9 @@
 				Base,
 			);
 			mainGroup = B3937D04243E710C00B4BB88;
+			packageReferences = (
+				B3A30FA225BD64EB00F1B64D /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+			);
 			productRefGroup = B3937D0E243E710C00B4BB88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -317,70 +290,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		98A60D8E76FEFBB8E472360E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ToolbarRadio-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB78A87969082C10BC04479B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ToolbarRadioTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC5825369171E916A41A280D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToolbarRadio/Pods-ToolbarRadio-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B381A3C42442F7D300A05B2A /* Sources */ = {
@@ -435,7 +344,6 @@
 /* Begin XCBuildConfiguration section */
 		B381A3D02442F7D300A05B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9F1485FB39C7D589F8A73A0 /* Pods-ToolbarRadioTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -455,7 +363,6 @@
 		};
 		B381A3D12442F7D300A05B2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48DC608CE418ED34D4FF4230 /* Pods-ToolbarRadioTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -588,7 +495,6 @@
 		};
 		B3937D21243E711100B4BB88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CB9A4248A132A3F6E1F4EC1 /* Pods-ToolbarRadio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToolbarRadio/ToolbarRadio.entitlements;
@@ -611,7 +517,6 @@
 		};
 		B3937D22243E711100B4BB88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1DD87431DB2B6F870E19512 /* Pods-ToolbarRadio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToolbarRadio/ToolbarRadio.entitlements;
@@ -663,6 +568,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3A30FA225BD64EB00F1B64D /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3A30FA325BD64EB00F1B64D /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3A30FA225BD64EB00F1B64D /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3937D05243E710C00B4BB88 /* Project object */;
 }
