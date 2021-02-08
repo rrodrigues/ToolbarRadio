@@ -73,18 +73,18 @@ class StatusBarItem {
     private func titleForState(_ state: Player.State) -> String {
         switch state {
         case .stop: return "▶"
-        case .loading: return "L"
+        case .loading: return ""
         case .playing: return ""
-        case .error: return "E"
+        case .error: return ""
         }
     }
     
     private func iconForState(_ state: Player.State) -> NSImage? {
         switch state {
         case .stop: return nil
-        case .loading: return nil
+        case .loading: return NSImage(named: "loading")
         case .playing: return NSImage(named: "playing")
-        case .error: return nil
+        case .error: return NSImage(named: "error")
         }
     }
     
