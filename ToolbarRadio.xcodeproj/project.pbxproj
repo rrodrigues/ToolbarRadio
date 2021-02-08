@@ -504,7 +504,7 @@
 				CODE_SIGN_ENTITLEMENTS = ToolbarRadio/ToolbarRadio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ToolbarRadio/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToolbarRadio/Info.plist;
@@ -527,7 +527,7 @@
 				CODE_SIGN_ENTITLEMENTS = ToolbarRadio/ToolbarRadio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ToolbarRadio/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToolbarRadio/Info.plist;
