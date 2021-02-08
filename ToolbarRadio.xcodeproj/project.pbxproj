@@ -25,6 +25,7 @@
 		B3937D18243E711100B4BB88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3937D17243E711100B4BB88 /* Preview Assets.xcassets */; };
 		B3937D1B243E711100B4BB88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3937D19243E711100B4BB88 /* Main.storyboard */; };
 		B3A30FA425BD64EB00F1B64D /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3A30FA325BD64EB00F1B64D /* SwifterSwift */; };
+		B3A30FAA25BD671700F1B64D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A30FA925BD671700F1B64D /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B3937D1A243E711100B4BB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3937D1C243E711100B4BB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3937D1D243E711100B4BB88 /* ToolbarRadio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolbarRadio.entitlements; sourceTree = "<group>"; };
+		B3A30FA925BD671700F1B64D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,9 @@
 			children = (
 				B370F783243FD9E200C52EC4 /* EventMonitor.swift */,
 				B381A3D22443014300A05B2A /* ImagesDownloader.swift */,
-				B381A3BC2442351900A05B2A /* Mediator.swift */,
 				B381A3BE244239EA00A05B2A /* LocalNotificationCenter.swift */,
+				B3A30FA925BD671700F1B64D /* Logger.swift */,
+				B381A3BC2442351900A05B2A /* Mediator.swift */,
 				B370F7942441C17400C52EC4 /* NowPlayingFetcher.swift */,
 				B370F78B243FE16900C52EC4 /* Player.swift */,
 				B370F78F243FE3C500C52EC4 /* Settings.swift */,
@@ -315,6 +318,7 @@
 				B370F790243FE3C500C52EC4 /* Settings.swift in Sources */,
 				B381A3D32443014300A05B2A /* ImagesDownloader.swift in Sources */,
 				B370F78C243FE16900C52EC4 /* Player.swift in Sources */,
+				B3A30FAA25BD671700F1B64D /* Logger.swift in Sources */,
 				B370F79D2441DE6900C52EC4 /* Date+Extra.swift in Sources */,
 				B370F787243FD9EA00C52EC4 /* ContentView.swift in Sources */,
 			);
